@@ -1,0 +1,197 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "a",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "b",
+						"type": "uint32"
+					}
+				],
+				"name": "dividir",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "a",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "b",
+						"type": "uint32"
+					}
+				],
+				"name": "multiplicar",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "obetenerPropietario",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "obtenerNumero",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "a",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "b",
+						"type": "uint32"
+					}
+				],
+				"name": "restar",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "apellido",
+						"type": "string"
+					}
+				],
+				"name": "saludar",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "a",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "b",
+						"type": "uint32"
+					}
+				],
+				"name": "sumar",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/funciones.sol": "Ejemplo"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/funciones.sol": {
+			"keccak256": "0x501e5706bc08cb158f5c6ce30391120936891881a59711e92b000ef86240c2f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c760ea40d9cf1dae46f807cface8b4cdeabd113eb1bab93efd78b4d1f2ccce74",
+				"dweb:/ipfs/QmUM4eYNryFC22p2XZtcbgBUXKgPttrTwQz3u6PjJG8NNS"
+			]
+		}
+	},
+	"version": 1
+}
