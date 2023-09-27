@@ -1,0 +1,144 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "estado",
+						"type": "bool"
+					}
+				],
+				"name": "CambioDeMiTarea",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "descripcion",
+						"type": "string"
+					}
+				],
+				"name": "ProductoCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "ProductoCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Productos",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "descripcion",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_descripcion",
+						"type": "string"
+					}
+				],
+				"name": "createProducto",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/soltarea.sol": "ProductoContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/soltarea.sol": {
+			"keccak256": "0xa5a547a23294e0dd2584ac10165f80450c14e5398452e300b5087b13164d4b6d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9ac49b50806ea6d7b578c0d5a02e70fc5248f8c24b825180b7fa2d9b60f7eeff",
+				"dweb:/ipfs/QmWbRAt169k8GCGbhd8G5eRVzbeJYrSeDMUucKRv3JX3Tx"
+			]
+		}
+	},
+	"version": 1
+}

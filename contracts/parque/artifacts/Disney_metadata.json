@@ -1,0 +1,475 @@
+{
+	"compiler": {
+		"version": "0.6.7+commit.b8d736ae"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "baja_atraccion",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "baja_comida",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "disfruta_atraccion",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "disfruta_comida",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "nueva_atraccion",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"name": "nueva_comida",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "AtraccionesDisponibles",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombreAtraccion",
+						"type": "string"
+					}
+				],
+				"name": "BajaAtraccion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombreComida",
+						"type": "string"
+					}
+				],
+				"name": "BajaComida",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Clientes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokens_comprados",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ComidasDisponibles",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "CompraTokens",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombreComida",
+						"type": "string"
+					}
+				],
+				"name": "ComprarComida",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "DevolverTokens",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "GeneraTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Historial",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "HistorialComida",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "MappingAtracciones",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nombre_atraccion",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "precio_atraccion",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "estado_atraccion",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "MappingComida",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nombre_comida",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "precio_comida",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "estado_comida",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "MisTokens",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombreAtraccion",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_precio",
+						"type": "uint256"
+					}
+				],
+				"name": "NuevaAtraccion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombreComida",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_precio",
+						"type": "uint256"
+					}
+				],
+				"name": "NuevaComida",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombreAtraccion",
+						"type": "string"
+					}
+				],
+				"name": "SubirseAtraccion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/parque/parque.sol": "Disney"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/parque/ERC20.sol": {
+			"keccak256": "0x5fb076ae9a077f2ab84c881d193925d1814ff208a05a4a0650c683e9d10b3e86",
+			"urls": [
+				"bzz-raw://a725915c580ad65a1a0a0212fcb4d36855aa3dc39ddf2017dca6071f580dc7f8",
+				"dweb:/ipfs/QmTpWX44ccpA3x6nHS3AwWDfXAFR1EHCDFqRfFwUq1ctMX"
+			]
+		},
+		"contracts/parque/SafeMath.sol": {
+			"keccak256": "0x08da28ac0c0d67374c8dfc9bf19fb6a94bcd42acc62723ff26384fe13e76f162",
+			"urls": [
+				"bzz-raw://1a64f79e25246431a82bfd3ddd8de66c384e8a8c79377d8869d4c800bda7e04b",
+				"dweb:/ipfs/Qme7XYo9svVBFLFgc9DLnc2SYqQR5wEgo3opzULP2GPtLp"
+			]
+		},
+		"contracts/parque/parque.sol": {
+			"keccak256": "0x0e6d17e06ba94eea4af0840308904b72f90cf5d8f718c85cc0e1cf9154e3340b",
+			"urls": [
+				"bzz-raw://88a61b93cd3209a28a186b3323c2e292b6e1aa4cfb6e936ee99a6f96b2d1236c",
+				"dweb:/ipfs/QmcARZQ6HE29Av7zwprK4mJ561FPVd6ZifTViughTMonMn"
+			]
+		}
+	},
+	"version": 1
+}

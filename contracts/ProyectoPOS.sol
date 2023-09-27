@@ -5,8 +5,8 @@ contract nuevosProductos {
     address public propietario;
     uint256 public contadorProductos;
 
-     event ProductoAgregado(string nombre, string descripcion, uint256 existencias, string caducidad, uint256 precio);
-     // Evento para notificar la compra de un producto.
+    event ProductoAgregado(string nombre, string descripcion, uint256 existencias, string caducidad, uint256 precio);
+    // Evento para notificar la compra de un producto.
     event CompraProducto(address comprador, string nombreProducto, uint256 cantidadComprada);
 
     struct Producto {
