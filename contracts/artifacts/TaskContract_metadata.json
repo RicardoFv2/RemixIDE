@@ -6,11 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -27,92 +22,6 @@
 					}
 				],
 				"name": "CambioDeMiTarea",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "productId",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "description",
-						"type": "string"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "stock",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "expirationDate",
-						"type": "string"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "seller",
-						"type": "address"
-					}
-				],
-				"name": "ProductAdded",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "productId",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "quantity",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "totalPrice",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "buyer",
-						"type": "address"
-					}
-				],
-				"name": "ProductPurchased",
 				"type": "event"
 			},
 			{
@@ -155,39 +64,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_description",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_stock",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_expirationDate",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_price",
-						"type": "uint256"
-					}
-				],
-				"name": "addProduct",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "uint256",
 						"name": "_id",
 						"type": "uint256"
@@ -214,133 +90,6 @@
 				"name": "createTask",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_productId",
-						"type": "uint256"
-					}
-				],
-				"name": "getProductDetails",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "description",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "stock",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "expirationDate",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "productCount",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "products",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "description",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "stock",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "expirationDate",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_productId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_quantity",
-						"type": "uint256"
-					}
-				],
-				"name": "purchaseProduct",
-				"outputs": [],
-				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -424,11 +173,11 @@
 	},
 	"sources": {
 		"contracts/agregarInvetarioPOS.sol": {
-			"keccak256": "0xa7ebc260823650f02cd5fd91915c16fcf6b074d0f6ac89097937619448539336",
+			"keccak256": "0x24142480a31651a1c00c32f098e6178c4c9d428802ff09337d95b80fa98c525e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a2056ee752085917c166ed1b64eaff4ec6b61f3b388eea4f6b91c16918453187",
-				"dweb:/ipfs/QmWjigvp2LoYnL1sG13RwRvwAHwv9Q2hftcKyghZuzgtBN"
+				"bzz-raw://51f76e3380877c47131ea7363f0c22d3795a75edaf08dc07d48ffa9b838aefee",
+				"dweb:/ipfs/QmcQk2Z5Crt6weVkvKmaEqLoCMC8VxR7rSVXmc5ejRNW2A"
 			]
 		}
 	},
